@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Ciudad Lab logo apilado</title>
+  <desc id="desc">Símbolo territorial sobre wordmark Ciudad Lab.</desc>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@600&amp;display=swap');
+    .word{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;letter-spacing:-1.5px}
+    .sub{font-family:'Inter',Arial,sans-serif;font-weight:600;letter-spacing:1.4px}
+  </style>
+  <rect width="400" height="400" fill="#F4EFE6"/>
+  <g transform="translate(110 42)">
+    <circle cx="90" cy="90" r="72" fill="none" stroke="#102A43" stroke-width="14"/>
+    <circle cx="90" cy="90" r="23" fill="#F4EFE6" stroke="#102A43" stroke-width="11"/>
+    <path d="M90 18 L90 66 M90 114 L90 162 M18 90 L66 90 M114 90 L162 90" stroke="#102A43" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="90" cy="18" r="18" fill="#64B6AC" stroke="#102A43" stroke-width="8"/>
+    <circle cx="162" cy="90" r="18" fill="#C96F3D" stroke="#102A43" stroke-width="8"/>
+    <circle cx="90" cy="162" r="18" fill="#3A7D44" stroke="#102A43" stroke-width="8"/>
+    <circle cx="18" cy="90" r="18" fill="#F4EFE6" stroke="#102A43" stroke-width="8"/>
+  </g>
+  <text x="200" y="275" text-anchor="middle" class="word" font-size="46" fill="#102A43">Ciudad Lab</text>
+  <text x="200" y="308" text-anchor="middle" class="sub" font-size="12" fill="#1F5673">TALENTO · EVIDENCIA · TERRITORIO</text>
+</svg>
