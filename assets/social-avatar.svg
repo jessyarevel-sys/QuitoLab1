@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Ciudad Lab avatar social</title>
+  <desc id="desc">Avatar social con símbolo Ciudad Lab y zona segura invisible.</desc>
+  <rect width="1024" height="1024" fill="#102A43"/>
+  <circle cx="512" cy="512" r="430" fill="#F4EFE6"/>
+  <g transform="translate(252 252)">
+    <circle cx="260" cy="260" r="208" fill="none" stroke="#102A43" stroke-width="44"/>
+    <circle cx="260" cy="260" r="68" fill="#F4EFE6" stroke="#102A43" stroke-width="36"/>
+    <path d="M260 52 L260 192 M260 328 L260 468 M52 260 L192 260 M328 260 L468 260" stroke="#102A43" stroke-width="36" stroke-linecap="round"/>
+    <circle cx="260" cy="52" r="54" fill="#64B6AC" stroke="#102A43" stroke-width="26"/>
+    <circle cx="468" cy="260" r="54" fill="#C96F3D" stroke="#102A43" stroke-width="26"/>
+    <circle cx="260" cy="468" r="54" fill="#3A7D44" stroke="#102A43" stroke-width="26"/>
+    <circle cx="52" cy="260" r="54" fill="#F4EFE6" stroke="#102A43" stroke-width="26"/>
+  </g>
+  <rect x="112" y="112" width="800" height="800" fill="none" stroke="#FFFFFF" stroke-width="0" opacity="0"/>
+</svg>
