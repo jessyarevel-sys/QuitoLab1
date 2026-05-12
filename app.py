@@ -3,7 +3,7 @@ import streamlit as st
 from config import APP_ICON, APP_NAME, PAGE_OPTIONS
 from data.database import initialize_database
 from logic.projects import get_projects
-from ui._brand import inject_brand_styles
+from ui._brand import inject_brand
 from ui.evidence import render_evidence_page
 from ui.explore import render_explore_page
 from ui.home import render_home_page
@@ -12,14 +12,14 @@ from ui.submissions import render_submissions_page
 
 
 def initialize_app():
-    """Inicializa Streamlit y DB. Inputs: ninguno. Outputs: None. Errores: muestra mensaje visible."""
+    """Inicializa Streamlit, aplica marca y prepara DB. Inputs: ninguno. Outputs: None. Errores: UI visible."""
     st.set_page_config(
         page_title=APP_NAME,
         page_icon=APP_ICON,
         layout="wide",
         initial_sidebar_state="expanded",
     )
-    inject_brand_styles()
+    inject_brand()
 
     try:
         initialize_database()
@@ -29,9 +29,9 @@ def initialize_app():
 
 
 def render_navigation():
-    """Renderiza navegación. Inputs: ninguno. Outputs: nombre de página. Errores: ninguno."""
+    """Renderiza navegación lateral. Inputs: ninguno. Outputs: página seleccionada. Errores: ninguno."""
     st.sidebar.title(f"{APP_ICON} {APP_NAME}")
-    st.sidebar.caption("MVP para conectar proyectos territoriales con talento y confianza.")
+    st.sidebar.caption("Proyectos territoriales con evidencia y participación clara.")
     return st.sidebar.radio("Navegación", PAGE_OPTIONS)
 
 
@@ -49,7 +49,7 @@ def main():
         render_match_page(projects)
     elif page == "Confianza y evidencia":
         render_evidence_page(projects)
-    elif page == "Postulaciones":
+    elif page == "Personas interesadas":
         render_submissions_page()
 
 
