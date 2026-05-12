@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Ciudad Lab wordmark</title>
+  <desc id="desc">Wordmark tipográfico Ciudad Lab.</desc>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@600&amp;display=swap');
+    .word{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;letter-spacing:-3px}
+    .sub{font-family:'Inter',Arial,sans-serif;font-weight:600;letter-spacing:2.2px}
+  </style>
+  <rect width="1200" height="200" fill="#F4EFE6"/>
+  <text x="60" y="105" class="word" font-size="82" fill="#102A43">Ciudad Lab</text>
+  <circle cx="463" cy="75" r="9" fill="#64B6AC"/>
+  <circle cx="491" cy="75" r="9" fill="#C96F3D"/>
+  <circle cx="519" cy="75" r="9" fill="#3A7D44"/>
+  <text x="65" y="145" class="sub" font-size="16" fill="#1F5673">PROYECTOS TERRITORIALES CON CONFIANZA</text>
+</svg>
