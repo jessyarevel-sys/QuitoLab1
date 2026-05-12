@@ -12,14 +12,12 @@ PAGE_OPTIONS = [
     "Explorar proyectos",
     "Match de talento",
     "Confianza y evidencia",
-    "Postulaciones",
+    "Personas interesadas",
 ]
 
 ALL_OPTION = "Todas"
 ALL_DISTRICTS_OPTION = "Todos"
 
-MIN_TRUST_SCORE = 0
-MAX_TRUST_SCORE = 100
 HIGH_TRUST_THRESHOLD = 80
 MEDIUM_TRUST_THRESHOLD = 70
 
