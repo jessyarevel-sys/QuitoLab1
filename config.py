@@ -7,10 +7,24 @@ TMP_DIR = Path("/tmp")
 DB_PATH = TMP_DIR / "ciudad_lab.db"
 CSV_EXPORT_PATH = TMP_DIR / "postulaciones_ciudad_lab.csv"
 
+PAGE_OPTIONS = [
+    "Inicio",
+    "Explorar proyectos",
+    "Match de talento",
+    "Confianza y evidencia",
+    "Postulaciones",
+]
+
+ALL_OPTION = "Todas"
+ALL_DISTRICTS_OPTION = "Todos"
+
 MIN_TRUST_SCORE = 0
 MAX_TRUST_SCORE = 100
 HIGH_TRUST_THRESHOLD = 80
 MEDIUM_TRUST_THRESHOLD = 70
+
+MIN_MOTIVATION_LENGTH = 20
+MIN_SKILLS_LENGTH = 8
 
 REQUIRED_APPLICATION_FIELDS = [
     "applicant_name",
