@@ -1,22 +1,25 @@
 import streamlit as st
-from config import APP_NAME, APP_ICON
+
+from config import APP_ICON, APP_NAME, PAGE_OPTIONS
 from data.database import initialize_database
 from logic.projects import get_projects
-from ui.home import render_home_page
-from ui.explore import render_explore_page
-from ui.match import render_match_page
+from ui._brand import inject_brand_styles
 from ui.evidence import render_evidence_page
+from ui.explore import render_explore_page
+from ui.home import render_home_page
+from ui.match import render_match_page
 from ui.submissions import render_submissions_page
 
 
 def initialize_app():
-    """Inicializa app y DB. Inputs: ninguno. Outputs: None. Errores: muestra error en UI."""
+    """Inicializa Streamlit y DB. Inputs: ninguno. Outputs: None. Errores: muestra mensaje visible."""
     st.set_page_config(
         page_title=APP_NAME,
         page_icon=APP_ICON,
         layout="wide",
         initial_sidebar_state="expanded",
     )
+    inject_brand_styles()
 
     try:
         initialize_database()
@@ -26,19 +29,10 @@ def initialize_app():
 
 
 def render_navigation():
-    """Renderiza navegación. Inputs: ninguno. Outputs: página seleccionada. Errores: ninguno."""
+    """Renderiza navegación. Inputs: ninguno. Outputs: nombre de página. Errores: ninguno."""
     st.sidebar.title(f"{APP_ICON} {APP_NAME}")
-    st.sidebar.caption("MVP de proyectos territoriales para Quito.")
-    return st.sidebar.radio(
-        "Navegación",
-        [
-            "Inicio",
-            "Explorar proyectos",
-            "Match de talento",
-            "Confianza y evidencia",
-            "Postulaciones",
-        ],
-    )
+    st.sidebar.caption("MVP para conectar proyectos territoriales con talento y confianza.")
+    return st.sidebar.radio("Navegación", PAGE_OPTIONS)
 
 
 def main():
@@ -48,7 +42,7 @@ def main():
     page = render_navigation()
 
     if page == "Inicio":
-        render_home_page()
+        render_home_page(projects)
     elif page == "Explorar proyectos":
         render_explore_page(projects)
     elif page == "Match de talento":
